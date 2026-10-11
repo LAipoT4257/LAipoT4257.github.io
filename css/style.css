@@ -1,20 +1,14 @@
-/* =========================================================
-   Student Portfolio - style.css
-   Theme: white background with dark & grey accents. Change colors in :root below.
-   ========================================================= */
-
-/* ---------- 1. Color theme and fonts (CSS variables) ---------- */
 :root {
-  --primary: #2B2B30;        /* dark charcoal accent (links, buttons, borders) */
-  --primary-dark: #111111;   /* near-black (headings, hover) */
-  --lavender: #F0F0F2;       /* light grey for alternate section backgrounds */
-  --background: #FFFFFF;     /* white page background */
-  --surface: #FFFFFF;        /* cards */
-  --text: #1A1A1A;           /* dark text */
-  --muted: #5F5F66;          /* secondary grey text */
+  --primary: #2B2B30;
+  --primary-dark: #111111;
+  --lavender: #F0F0F2;
+  --background: #FFFFFF;
+  --surface: #FFFFFF;
+  --text: #1A1A1A;
+  --muted: #5F5F66;
   --border: #DCDCE0;
 
-  --on-primary: #FFFFFF;     /* text color placed on top of dark buttons */
+  --on-primary: #FFFFFF;
 
   --font-heading: "Lora", Georgia, serif;
   --font-body: "Inter", "Segoe UI", Arial, sans-serif;
@@ -26,11 +20,10 @@
   color-scheme: light;
 }
 
-/* ---------- 2. Base styles ---------- */
 *, *::before, *::after { box-sizing: border-box; }
 
 html {
-  scroll-behavior: smooth;          /* smooth scrolling to sections */
+  scroll-behavior: smooth;
   scroll-padding-top: var(--nav-height);
 }
 
@@ -54,15 +47,13 @@ h3 { font-size: 1.2rem; }
 
 .container { width: 100%; max-width: 1100px; margin: 0 auto; padding: 0 1.25rem; }
 
-/* Visible keyboard focus */
 a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visible {
   outline: 3px solid var(--primary-dark);
   outline-offset: 2px;
 }
 
-/* ---------- 3. Navigation (Flexbox) ---------- */
 .site-header {
-  position: fixed;                 /* stays visible while scrolling */
+  position: fixed;
   top: 0; left: 0; right: 0;
   height: var(--nav-height);
   background: var(--background);
@@ -74,7 +65,7 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   height: 100%;
   display: flex;
   align-items: center;
-  justify-content: space-between;  /* logo left, links right */
+  justify-content: space-between;
 }
 
 .logo {
@@ -98,7 +89,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 }
 .nav-menu a:hover { background: var(--lavender); color: var(--primary-dark); }
 
-/* Hamburger button (hidden on desktop) */
 .nav-toggle {
   display: none;
   background: none;
@@ -114,14 +104,18 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   border-radius: 2px;
 }
 
-/* ---------- 4. Hero (Home) ---------- */
 .hero {
   padding: calc(var(--nav-height) + 3rem) 0 4rem;
   background: var(--lavender);
 }
+
+.hero-photo{
+  order: -1;
+}
+
 .hero-grid {
   display: grid;
-  grid-template-columns: 1.3fr 1fr;
+  grid-template-columns: 1fr 1.3fr;
   gap: 2.5rem;
   align-items: center;
 }
@@ -141,7 +135,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   background: var(--surface);
 }
 
-/* ---------- 5. Buttons ---------- */
 .btn {
   display: inline-block;
   padding: 0.7rem 1.4rem;
@@ -157,7 +150,6 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .btn-outline { background: transparent; color: var(--primary); }
 .btn-outline:hover { background: var(--primary); color: var(--on-primary); }
 
-/* ---------- 6. Sections and cards ---------- */
 .section { padding: 4rem 0; }
 .section-alt { background: var(--lavender); }
 
@@ -175,14 +167,12 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
 .plain-list li { padding: 0.3rem 0; color: var(--muted); }
 .plain-list strong { color: var(--text); }
 
-/* About + Skills grids (CSS Grid) */
 .about-grid, .skills-grid, .contact-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   gap: 1.25rem;
 }
 
-/* Skill badges */
 .badges { list-style: none; margin: 0; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
 .badges li {
   padding: 0.3rem 0.8rem;
@@ -193,10 +183,9 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   font-weight: 500;
 }
 
-/* ---------- 7. Projects ---------- */
 .projects-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);   /* desktop: 3 columns */
+  grid-template-columns: repeat(3, 1fr);
   gap: 1.5rem;
 }
 
@@ -238,7 +227,14 @@ a:focus-visible, button:focus-visible, input:focus-visible, textarea:focus-visib
   color: #8A1F1F;
 }
 
-/* ---------- 8. Contact form ---------- */
+.card a{
+  text-decoration: none;
+}
+
+.card a:hover{
+  text-decoration: underline;
+}
+
 .form-group { margin-bottom: 1rem; }
 label { display: block; font-weight: 600; margin-bottom: 0.3rem; }
 
@@ -257,17 +253,17 @@ input.invalid, textarea.invalid { border-color: #B3261E; }
 .error { display: block; min-height: 1.2em; margin-top: 0.25rem; font-size: 0.875rem; color: #B3261E; }
 .form-success { margin-top: 1rem !important; font-weight: 600; color: #1E6B3A !important; }
 
-/* ---------- 9. Footer ---------- */
+
 .site-footer {
   background: #1F1F22;
   color: #C9C9D0;
   padding: 1.5rem 0;
+
 }
 .footer-inner { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 0.5rem; }
 .footer-inner p { margin: 0; }
 .site-footer a { color: #fff; }
 
-/* ---------- 10. Back to top button (personal feature) ---------- */
 .back-to-top {
   position: fixed;
   right: 1.25rem; bottom: 1.25rem;
@@ -286,15 +282,11 @@ input.invalid, textarea.invalid { border-color: #B3261E; }
 .back-to-top.visible { opacity: 1; visibility: visible; }
 .back-to-top:hover { background: var(--primary-dark); }
 
-/* ---------- 11. Responsive design (media queries) ---------- */
-
-/* Tablet: projects in 2 columns */
 @media (max-width: 992px) {
   .projects-grid { grid-template-columns: repeat(2, 1fr); }
   h1 { font-size: 2.1rem; }
 }
 
-/* Mobile: 1 column + hamburger menu */
 @media (max-width: 680px) {
   .projects-grid,
   .about-grid,
@@ -324,7 +316,6 @@ input.invalid, textarea.invalid { border-color: #B3261E; }
   .nav-menu.open { display: flex; }
 }
 
-/* Respect users who prefer less motion */
 @media (prefers-reduced-motion: reduce) {
   html { scroll-behavior: auto; }
   * { transition: none !important; }

@@ -6,7 +6,6 @@
   <title>Lainer Malis  Student Portfolio</title>
   <meta name="description" content="Student portfolio of [YOUR NAME]: about me, skills, projects, latest GitHub repositories and contact details.">
 
-  <!-- Fonts: one for headings, one for body text (system fonts are used if these cannot load) -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Lora:wght@600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
@@ -15,7 +14,6 @@
 </head>
 <body>
 
-  <!-- ============ HEADER / NAVIGATION ============ -->
   <header class="site-header">
     <nav class="navbar container" aria-label="Main navigation">
       <a href="#home" class="logo" aria-label="Go to top of page">Malis | Profile</a>
@@ -36,17 +34,15 @@
 
   <main>
 
-    <!-- ============ HOME ============ -->
     <section id="home" class="hero">
       <div class="container hero-grid">
         <div class="hero-text">
           <h1>LAINER G. MALIS</h1>
-          <p class="tagline">WAY NAS DI | Future  MO AYIEEE!!</p>
+          <p class="tagline">Student Developer | Future CEO</p>
           <p class="intro">
-            IAy inay inayan pay nas project ayna ehh,
-                    naey d eyak pan puyat puyatan yan imbag kuma
-                    nu umidawat si siping yan maga met sakit et d 
-                    tuktuk di idawat na yan ayshh inayan.
+            I am an IT student interested in technology,
+            robotics and game development, and I keep improving
+            my skills through hands-on projects.
           </p>
           <div class="hero-buttons">
             <a href="#projects" class="btn btn-primary">View my projects</a>
@@ -55,52 +51,52 @@
         </div>
 
         <div class="hero-photo">
-          <!-- Put your photo at images/profile.jpg (under 500 KB) -->
-          <img src="images/profile.jpg" alt="Profile photo of [YOUR NAME]" width="320" height="320">
+          <img src="images/profile.png" alt="Profile photo" width="320" height="320">
         </div>
       </div>
     </section>
 
-    <!-- ============ ABOUT ============ -->
     <section id="about" class="section">
       <div class="container">
         <h2>About me</h2>
         <div class="about-grid">
           <article class="card">
             <h3>Biography</h3>
-            <p> Ket syak ni Lainer nga putot ni Papak
-                        nga in anak met ni mamak, ag tawen t sinpoy siyam
-                        yan nangangato adi din nan kick ko</p>
+            <p>I am Lainer G. Malis from Nueva Vizcaya currenty
+               taking the course BSIT. Motivated by the phrase "
+               I am born and will eventually die".  </p>
           </article>
           <article class="card">
             <h3>Education</h3>
             <ul class="plain-list">
-              <li><strong>School:</strong>NVSU BAMBANG </li>
+              <li><strong>School:</strong> NVSU BAMBANG </li>
               <li><strong>Program:</strong> BACHELOR OF SCIENCE IN INFORMATION TECHNOLOGY</li>
-              <li><strong>Expected graduation:</strong> 2099</li>
+              <li><strong>Expected graduation:</strong> 2029</li>
             </ul>
           </article>
           <article class="card">
             <h3>Career goals</h3>
-            <p>Anuk ah din anok ah yak si duy ya, ya asi sidoy ey
-                            ya asi anok ah ay basta anok ah adi didoy</p>
+            <p>To be Rich</p>
           </article>
           <article class="card">
             <h3>Interests</h3>
-            <p></p> ah din anok ah yak si duy ya, ya asi sidoy ey
-                            ya asi anok ah ay basta anok ah adi didoy </p>
-            <ul class="plain-list">
-              <li>Programming</li>
-              <li>Web development</li>
-              <li>Technology</li>
+            <ul class="plain-list">                              
+              <li>Sports</li>
+              <li>Drawing</li>
+              <li>Robotics</li>
+              <li>Sky Diving</li>
+              <li>Film making</li>
+              <li>Photography</li>
+              <li>Break Dancing</li>
               <li>Learning new skills</li>
+              <li>Game development</li>
+              <li>The art of Body Control</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ============ SKILLS ============ -->
     <section id="skills" class="section section-alt">
       <div class="container">
         <h2>Skills</h2>
@@ -108,9 +104,9 @@
           <article class="card">
             <h3>Technical skills</h3>
             <ul class="badges">
-              <li>Web development</li>
+              <li>Basic Web development</li>
               <li>Basic programming</li>
-              <li>Database fundamentals</li>
+              <li>Basic Database fundamentals</li>
               <li>Computer System servicing</li>
 
             </ul>
@@ -121,7 +117,6 @@
               <li>Java</li>
               <li>HTML</li>
               <li>CSS</li>
-              <li>JavaScript</li>
               <li>SQL</li>
             </ul>
           </article>
@@ -139,34 +134,31 @@
             <ul class="badges">
               <li>Problem solving</li>
               <li>Communication</li>
-              <li>Teamwork</li>
-              <li>Time management</li>
+              <li>Patience</li>
+              <li>Independent</li>
               <li>Adaptability</li>
+              <li>Critical Thinking</li>
             </ul>
           </article>
         </div>
       </div>
     </section>
 
-    <!-- ============ PROJECTS ============ -->
     <section id="projects" class="section">
       <div class="container">
         <h2>Projects</h2>
 
-        <!-- Cards are generated by js/script.js from data/projects.json -->
         <div id="projectsGrid" class="projects-grid" aria-live="polite">
           <p class="status-message">Loading projects...</p>
         </div>
 
         <h3 class="subheading">Latest GitHub repositories</h3>
-        <!-- Filled by js/script.js using the GitHub REST API -->
         <ul id="repoList" class="repo-list" aria-live="polite">
           <li class="status-message">Loading repositories...</li>
         </ul>
       </div>
     </section>
 
-    <!-- ============ CONTACT ============ -->
     <section id="contact" class="section section-alt">
       <div class="container">
         <h2>Contact</h2>
@@ -175,9 +167,8 @@
           <div class="card">
             <h3>Get in touch</h3>
             <ul class="plain-list">
-              <li><strong>Email:</strong> <a href="mailto:your.email@example.com">lailaipot17@gmail.com</a></li>
-              <li><strong>GitHub:</strong> <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener">github.com/LAipoT4257</a></li>
-              <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">Was pa</a></li>
+              <li><strong>Email:</strong> <a href="mailto:lailaipot17@gmail.com">lailaipot17@gmail.com</a></li>
+              <li><strong>GitHub:</strong> <a href="https://github.com/LAipoT4257" target="_blank" rel="noopener">github.com/LAipoT4257</a></li>
             </ul>
           </div>
 
@@ -212,19 +203,15 @@
 
   </main>
 
-  <!-- ============ FOOTER ============ -->
   <footer class="site-footer">
     <div class="container footer-inner">
       <p>&copy; 2026 Malis Lainer &ndash; Student Portfolio</p>
       <p>
-        <a href="https://github.com/YOUR-GITHUB-USERNAME" target="_blank" rel="noopener">GitHub</a>
-        &nbsp;|&nbsp;
-        <a href="https://www.linkedin.com/in/YOUR-LINKEDIN" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="https://github.com/LAipoT4257" target="_blank" rel="noopener">GitHub</a>
       </p>
     </div>
   </footer>
 
-  <!-- Personal feature: Back to top button -->
   <button id="backToTop" class="back-to-top" aria-label="Back to top">&uarr;</button>
 
   <script src="js/script.js"></script>
