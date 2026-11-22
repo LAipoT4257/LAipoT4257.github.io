@@ -24,11 +24,11 @@
     "link": "https://laipot4257.github.io/ShortMessage"
   },
   {
-    "title": "Carpool Scheduling",
-    "description": "A carpool scheduling app",
+    "title": "Carpool Scheduling App",
+    "description": "ClassRide - a carpool scheduling app",
     "technologies": ["HTML", "CSS","JAVASCRIPT"],
     "role": "Designer and Developer",
     "screenshot": "images/project4.png",
-    "link": "https://carpoolplanner.netlify.app"
+    "link": "https://classride.netlify.app"
   }
 ]
